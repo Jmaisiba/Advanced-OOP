@@ -1,0 +1,11 @@
+//lab 4
+C:\Users\YCEE\Desktop\Libraryfx
+set PATH_TO_FX="C:\Users\YCEE\Desktop\javafx-sdk-12.0.2\lib"
+javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml *.java
+start rmiregistry
+java --module-path %PATH_TO_FX% --add-modules javafx.controls Server
+
+//client side
+C:\Users\YCEE\Desktop\Libraryfx
+set PATH_TO_FX="C:\Users\YCEE\Desktop\javafx-sdk-12.0.2\lib"
+java --module-path %PATH_TO_FX% --add-modules javafx.controls Client

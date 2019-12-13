@@ -1,0 +1,12 @@
+//server code
+C:\Users\YCEE\Desktop\Wisy
+set PATH_TO_FX="C:\Users\YCEE\Desktop\javafx-sdk-12.0.2\lib"
+javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml *.java
+start rmiregistry
+java -cp .;C:\Users\YCEE\Desktop\mysql-connector-java-5.1.48\mysql-connector-java-5.1.48-bin.jar --module-path %PATH_TO_FX% --add-modules javafx.controls Server
+
+//client code
+C:\Users\YCEE\Desktop\Wisy
+set PATH_TO_FX="C:\Users\YCEE\Desktop\javafx-sdk-12.0.2\lib"
+java -cp .;C:\Users\YCEE\Desktop\mysql-connector-java-5.1.48\mysql-connector-java-5.1.48-bin.jar --module-path %PATH_TO_FX% --add-modules javafx.controls Client
+
